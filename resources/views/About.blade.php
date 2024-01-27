@@ -11,7 +11,28 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello Test</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MysNAV</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/Homes">Home</a>
+        <a class="nav-link" href="/Menu">Menu</a>
+        <a class="nav-link" href="/About">About</a>
+        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    
+    <h1>Hello About</h1>
+  
+</div>    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
