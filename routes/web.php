@@ -18,13 +18,19 @@ Route::get('/', function () {
 });
 
 Route::get('/Homes', function () {
-    return view('Home');
+    return view('Home', [
+        'title' => 'Home'
+    ]);
 });
 
 Route::get('/Menu', function () {
-    return view('Menu');
+    return view('Menu', [
+        'title' => 'Menu'
+    ]);
 });
 
 Route::get('/About', function () {
-    return view('About');
+    return view('About', [
+        'title' => 'About'
+    ]);
 });
