@@ -6,9 +6,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/Homes">Home</a>
-        <a class="nav-link" href="/Menu">Menu</a>
-        <a class="nav-link" href="/About">About</a>
+        <a class="nav-link {{$title == 'Home' ? 'active' : '' }}" aria-current="page" href="/Homes">Home</a>
+        <a class="nav-link {{$title == 'Menu' ? 'active' : '' }}" href="/Menu">Menu</a>
+        <a class="nav-link {{$title == 'About' ? 'active' : '' }}" href="/About">About</a>
         <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
       </div>
     </div>
