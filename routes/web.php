@@ -19,7 +19,8 @@ Route::get('/', function () {
 
 Route::get('/Homes', function () {
     return view('Home', [
-        'title' => 'Home'
+        'title' => 'Home',
+        // 'content' => 'lor'
     ]);
 });
 
