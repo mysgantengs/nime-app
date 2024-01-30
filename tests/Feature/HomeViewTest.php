@@ -8,13 +8,12 @@ use Tests\TestCase;
 
 class HomeViewTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     */
-    public function test_example(): void
+    
+    public function testHomes()
     {
-        $response = $this->get('/');
+        $this->get('/Homes')
+            ->assertSeeText('Reina')
+            ->assertSeeText('gambar');
 
-        $response->assertStatus(200);
     }
 }
