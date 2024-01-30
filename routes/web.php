@@ -20,17 +20,16 @@ Route::get('/', function () {
 Route::get('/Homes', function () {
     return view('Home', [
         'title' => 'Home',
-        'img' => '7296650.jpg'
+        'img' => '7296650.jpg',
+         'content' => ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita repellendus, non eos reiciendis voluptatum labore totam consequatur, nemo eius hic corporis! Quod optio ad excepturi, voluptates perspiciatis ab beatae!'
         // 'content' => 'lor'
     ]);
 });
 
 Route::get('/Menu', function () {
-    
-    return view('Menu', [
-        'title' => 'Menu',
-        'content' => $content
 
+    return view('Menu', [
+        'title' => 'Menu'
     ]);
 });
 
