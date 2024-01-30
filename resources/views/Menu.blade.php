@@ -2,6 +2,9 @@
 
 @section('container')
     <h1>Hello Menu</h1>
-    <p>{{$content}}</p>
+
+    @foreach($content as $cons)
+    <p>{{$cons['content']}}</p>
+    @endforeach
 @endsection    
 
