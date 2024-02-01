@@ -13,14 +13,14 @@ class datas
 
         [
         'images' => 'GAMBAR1.png',
-        'cardtitle' => 'amuragu',
+        'cardtitle' => 'Crazy Grils',
        'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
         'buttonName' => 'View'
         ],
 
         [
         'images' => 'bem.jpg',
-        'cardtitle' => 'city longers',
+        'cardtitle' => 'City Longers',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
         'buttonName' => 'View'
             
