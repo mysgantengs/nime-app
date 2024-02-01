@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\datas;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,7 +29,8 @@ Route::get('/Homes', function () {
 Route::get('/Menu', function () {
 
     return view('Menu', [
-        'title' => 'Menu'
+        'title' => 'Menu',
+        "MenuLists" => datas::alls
     ]);
 });
 
