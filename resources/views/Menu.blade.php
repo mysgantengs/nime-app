@@ -10,10 +10,10 @@
     @foreach( $MenuLists as $mes )
     <div class="col">
     <div class="card" style="width: 18rem;">
-  <img src="{{$images}}" class="card-img-top" alt="bem">
+  <img src="{{$mes['images']}}" class="card-img-top" alt="bem">
   <div class="card-body">
-    <h5 class="card-title">{{$cardtitle}}</h5>
-    <p class="card-text">{{$descriptions}}</p>
+    <h5 class="card-title">{{$mes['cardtitle']}}</h5>
+    <p class="card-text">{{$mes['descriptions']}}</p>
     <a href="#" class="btn btn-primary">{{$mes['buttonName']}}</a>
   </div>
 </div>

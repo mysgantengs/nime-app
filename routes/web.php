@@ -30,7 +30,7 @@ Route::get('/Menu', function () {
 
     return view('Menu', [
         'title' => 'Menu',
-        "MenuLists" => datas::alls
+        "MenuLists" => datas::alls()
     ]);
 });
 
