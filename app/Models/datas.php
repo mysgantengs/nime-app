@@ -73,8 +73,14 @@ class datas
 
     public static function alls(){
 
-        return self::$datas_list;
+        return collect(self::$datas_list);
 
-    }        
+    }
+    
+    public static function finds($slugs){
+
+        
+
+    }
 
 }
