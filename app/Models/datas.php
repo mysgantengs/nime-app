@@ -79,7 +79,9 @@ class datas
     
     public static function finds($slugs){
 
-        
+        $cardposts = static::alls();
+
+        return $cardposts->firstWhere('slugs', $slugs);
 
     }
 

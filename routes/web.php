@@ -48,7 +48,7 @@ Route::get('/About', function () {
 });
 
 Route::get('/viewrenders/{$slugs}', function ($slugs) {
-    
+    return view('views');
 });
 
 // Route::get('/CrazyGirls', function () {
