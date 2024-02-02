@@ -26,6 +26,8 @@ Route::get('/Homes', function () {
     ]);
 });
 
+
+
 Route::get('/Menu', function () {
 
     return view('Menu', [
@@ -34,6 +36,8 @@ Route::get('/Menu', function () {
     ]);
 });
 
+// Route::redirect('/', 'URI', 301);
+
 Route::get('/About', function () {
     return view('About', [
         'title' => 'About',
@@ -41,6 +45,10 @@ Route::get('/About', function () {
         'img' => '7296650.jpg',
         'content' => ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita repellendus, non eos reiciendis voluptatum labore totam consequatur, nemo eius hic corporis! Quod optio ad excepturi, voluptates perspiciatis ab beatae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatibus repellat illum hic, dolor enim magnam neque consectetur delectus veniam totam esse nihil impedit quos perferendis quibusdam sapiente, laboriosam iure?'
     ]);
+});
+
+Route::get('/viewrenders/{$slugs}', function ($slugs) {
+    
 });
 
 // Route::get('/CrazyGirls', function () {
