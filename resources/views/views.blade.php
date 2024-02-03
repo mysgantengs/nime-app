@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 
@@ -13,7 +13,7 @@
 
 
 <div class="row">
-@foreach( $MenuLists as $mess )
+@foreach ( $Menus as $mess )
 <div class="col-md-4 mx-auto">
 <h1 class="text-center">{{$mess['cardtitle']}}</h1><br>
 
@@ -27,4 +27,4 @@
 
 
 
-
+ -->

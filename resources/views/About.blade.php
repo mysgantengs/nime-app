@@ -10,7 +10,7 @@
        <img src="{{$img}}" alt="gambar" width="300x" height="300px" class="img-thumbnail rounded-circle text-center">
         </div>
             </div>
-        <p class="text-center">{{$}}</p>
+        <p class="text-center">{{$content}}</p>
 
     @endsection
      

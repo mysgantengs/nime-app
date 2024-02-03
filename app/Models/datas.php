@@ -15,7 +15,6 @@ class datas
         'images' => 'GAMBAR1.png',
         'cardtitle' => 'Crazy Grils',
        'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'crazy-girls'
         ],
 
@@ -23,7 +22,6 @@ class datas
         'images' => 'bem.jpg',
         'cardtitle' => 'City Longers',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'cit-longers'
             
         ],
@@ -33,7 +31,6 @@ class datas
         'images' => 'gambar2.png',
         'cardtitle' => 'Endixys',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'endixys'
        
        ],  
@@ -43,7 +40,6 @@ class datas
         'images' => 'hashiramas.jpg',
         'cardtitle' => 'Naruto Legends',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'hashiramas'
        
        ],    
@@ -53,7 +49,6 @@ class datas
         'images' => 'shadowshot.jpg',
         'cardtitle' => 'Shadow War',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'shadowshot'
        
        ],    
@@ -63,7 +58,6 @@ class datas
         'images' => 'spidermans.jpg',
         'cardtitle' => 'Spiderman Heroics',
         'descriptions' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto laborum itaque, ducimus consequatur perspiciatis, doloribus voluptatem aliquam obcaecati, aspernatur eius explicabo vero veniam! Est quisquam distinctio dignissimos repudiandae optio voluptate.',
-        'buttonName' => 'View',
         'slugs' => 'spidermans'
        
        ]    
