@@ -50,27 +50,3 @@ Route::get('/About', function () {
 Route::get('/viewrenders/{$slugs}', function ($slugs) {
     return view('views');
 });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.CrazyGrils');    
-// });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.Endixy');    
-// });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.gambar1');    
-// });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.gambar2');    
-// });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.Spiderman');    
-// });
-
-// Route::get('/CrazyGirls', function () {
-//     return view('core_descriptions.Shadowshot');    
-// });
