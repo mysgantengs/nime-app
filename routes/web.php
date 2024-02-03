@@ -18,34 +18,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/Homes', function () {
-    return view('Home', [
-        'title' => 'Home'
-       
-        // 'content' => 'lor'
-    ]);
-});
-
-
-
-Route::get('/Menu', function () {
-
-    return view('Menu', [
-        'title' => 'Menu',
-        "MenuLists" => datas::alls()
-    ]);
-});
-
-// Route::redirect('/', 'URI', 301);
-
-Route::get('/About', function () {
-    return view('About', [
-        'title' => 'About',
-        'titleII' => 'Y4KUZ4 STR4WS',
-        'img' => '7296650.jpg',
-        'content' => ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita repellendus, non eos reiciendis voluptatum labore totam consequatur, nemo eius hic corporis! Quod optio ad excepturi, voluptates perspiciatis ab beatae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatibus repellat illum hic, dolor enim magnam neque consectetur delectus veniam totam esse nihil impedit quos perferendis quibusdam sapiente, laboriosam iure?'
-    ]);
-});
+Route::get('/Homes', [\App\Http\Controllers\ViewController::class, 'Home']);
+Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu']);
+Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
 
 Route::get('/viewrenders/{$slugs}', function ($slugs) {
     return view('views');
