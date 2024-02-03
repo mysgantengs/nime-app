@@ -3,7 +3,6 @@
     
     @section('container')
     
-    <!-- @foreach ($MenuLists) -->
     <h1 class="text-center">{{$titleII}}</h1>
         <div class="row">
             <div class="col-md-4 mx-auto">

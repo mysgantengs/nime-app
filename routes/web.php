@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/Homes', function () {
     return view('Home', [
-        'title' => 'Home',
+        'title' => 'Home'
        
         // 'content' => 'lor'
     ]);
