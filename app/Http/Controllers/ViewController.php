@@ -46,7 +46,7 @@ class ViewController extends Controller
 
             'title' => 'slugs title',
             'Menus' => datas::finds($slugs)
-
+ 
 
         ]);
 

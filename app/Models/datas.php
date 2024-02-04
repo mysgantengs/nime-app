@@ -9,7 +9,7 @@ class datas
 {
     // use HasFactory;
 
-    private static $datas_list = [
+    public static $datas_list = [
 
         [
         'images' => 'GAMBAR1.png',

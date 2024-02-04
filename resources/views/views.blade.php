@@ -10,7 +10,6 @@
 </div>
  </div>
  <p class="text-center">{{$Menus['descriptions']}}</p>
-
 </div>
  @endsection
 
