@@ -39,4 +39,18 @@ class ViewController extends Controller
 
     }
 
+    public function ViewRender():Response{
+
+
+        return response()->view('views', [
+
+            'title' => 'slugs title',
+            'Menus' => datas::finds($slugs)
+
+
+        ]);
+
+
+    }
+
 }

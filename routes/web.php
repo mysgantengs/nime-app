@@ -22,6 +22,6 @@ Route::get('/Homes', [\App\Http\Controllers\ViewController::class, 'Home']);
 Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu']);
 Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
 
-Route::get('/viewrenders/{$slugs}', function ($slugs) {
+Route::get('/viewrenders/{$slugs}', function($slugs) {
     return view('views');
 });
