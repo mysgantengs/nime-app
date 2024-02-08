@@ -14,12 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/Homes', [\App\Http\Controllers\ViewController::class, 'Home']);
 Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu']);
 Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
-Route::get('/viewrenders/{$slugs}', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
+Route::get('/viewrenders', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 
