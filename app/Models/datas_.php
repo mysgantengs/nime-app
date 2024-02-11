@@ -65,13 +65,13 @@ class datas
 
     ];
 
-    public static function alls(){
+    public static function all(){
 
         return collect(self::$datas_list);
 
     }
     
-    public static function finds($slugs){
+    public static function find($slugs){
 
         $cardposts = static::alls();
 
