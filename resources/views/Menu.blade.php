@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts/main')
 
 @section('container')
 
@@ -9,11 +9,11 @@
 
    <div class="col">
     <div class="card" style="width: 18rem;">
-    <img src="{{$mes['images']}}" class="card-img-top" alt="bem">
+    <img src="{{ $mes->images }}" class="card-img-top" alt="bem">
     <div class="card-body">
-    <h5 class="card-title">{{$mes['cardtitle']}}</h5>
-    <p class="card-text">{{$mes['descriptions']}}</p>
-    <a href="/viewrenders/{{$mes['slugs']}}" class="btn btn-primary">Views</a>
+    <h5 class="card-title">{{ $mes->cardtitle }}</h5>
+    <p class="card-text">{{ $mes->descriptions }}</p>
+    <a href="/viewrenders/{{ $mes->slugs }}" class="btn btn-primary">Views</a>
   </div>
 </div>
 </div>
