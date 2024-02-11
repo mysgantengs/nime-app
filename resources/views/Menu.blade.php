@@ -13,7 +13,7 @@
     <div class="card-body">
     <h5 class="card-title">{{ $mes->cardtitle }}</h5>
     <p class="card-text">{{ $mes->descriptions }}</p>
-    <a href="/viewrenders/{{ $mes->slugs }}" class="btn btn-primary">Views</a>
+    <a href="/Menu/{{ $mes->id }}" class="btn btn-primary">Views</a><br><br>
   </div>
 </div>
 </div>
