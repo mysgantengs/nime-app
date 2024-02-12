@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class datas extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['images','cardtitle','decriptions'];
+
 }
