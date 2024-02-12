@@ -12,3 +12,4 @@ class datas extends Model
     protected $fillable = ['images','cardtitle','decriptions'];
 
 }
+
