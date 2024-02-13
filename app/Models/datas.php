@@ -9,7 +9,8 @@ class datas extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['images','cardtitle','decriptions'];
+    protected $fillable = ['images','cardtitle','descriptions'];
 
 }
+
 
