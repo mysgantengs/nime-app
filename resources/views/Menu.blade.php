@@ -14,10 +14,12 @@
     <h5 class="card-title">{{ $mes->cardtitle }}</h5>
     <p class="card-text">{{ $mes->descriptions }}</p>
     <a href="/Menu/{{ $mes->id }}" class="btn btn-primary">Views</a>
+   
   </div>
+  
 </div>
 </div>
-<br>
+
   @endforeach
 </div>
 

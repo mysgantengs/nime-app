@@ -42,7 +42,7 @@ class ViewController extends Controller
     public function ViewRender():Response{
 
 
-        return response()->view('views', [
+        return response()->view('Menus', [
 
             'title' => 'slugs title',
             'Menus' => datas::find($slugs)
