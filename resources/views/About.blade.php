@@ -5,7 +5,9 @@
     
     <div class="card bg-dark">
         <div class="card-body">
-            hello
+        <h1 class="text-white">Hina's Agawawa The <br>Sans</h1>
+
+        
         </div>
     </div>
 
