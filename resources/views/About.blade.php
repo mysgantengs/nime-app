@@ -3,13 +3,11 @@
     
     @section('container')
     
-    <h1 class="text-center">{{$titleII}}</h1>
-        <div class="row">
-            <div class="col-md-4 mx-auto">
-       <img src="{{$img}}" alt="gambar" width="300x" height="300px" class="img-thumbnail rounded-circle text-center">
+    <div class="card bg-dark">
+        <div class="card-body">
+            hello
         </div>
-            </div>
-        <p class="text-center">{{$content}}</p>
+    </div>
 
     @endsection
      
