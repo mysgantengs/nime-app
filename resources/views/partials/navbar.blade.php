@@ -9,9 +9,6 @@
         <a class="nav-link {{$title == 'Home' ? 'active' : '' }}" aria-current="page" href="/Homes">Home</a>
         <a class="nav-link {{$title == 'Menu' ? 'active' : '' }}" href="/Menu">Menu</a>
         <a class="nav-link {{$title == 'About' ? 'active' : '' }}" href="/About">About</a>
-        <a class="nav-link {{$title == 'Sign-in' ? 'active' : '' }}" href="/Singin">Sing-In</a>
-        <a class="nav-link {{$title == 'Logins' ? 'active' : '' }}" href="/Logins">Login</a>
-        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
       </div>
     </div>
   </div>
