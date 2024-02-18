@@ -2,10 +2,11 @@
 
 @section('container')
 
-<h1>Login</h1><br>
+
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
+    <h1>Login</h1><br>
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -20,7 +21,7 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Log-In</button>
 </form>
 </div>
 </div>
