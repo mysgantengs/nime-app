@@ -24,3 +24,10 @@ Route::get('/logs', function () {
         'title' => 'Login'
     ]);
 });
+
+Route::get('/register', function () {
+    return view('authethications.Register',[
+        'title' => 'Login'
+    ]);
+});
+

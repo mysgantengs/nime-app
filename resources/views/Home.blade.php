@@ -15,8 +15,8 @@
 
    <img src="gambar-nimes.png" alt="nimes-cospl" class="bg-disp">
 
-     <a href="" class="btn btn-danger">Sign-In</a>
-     <a href="" class="btn btn-danger">Log-In</a>
+     <a href="" class="btn btn-danger">Register</a>
+     <a href="/logs" class="btn btn-danger">Log-In</a>
 
      </div>
     </div> 
