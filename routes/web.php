@@ -19,4 +19,8 @@ Route::get('/Homes', [\App\Http\Controllers\ViewController::class, 'Home']);
 Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu']);
 Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
 Route::get('/Menu/{$men}', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
-
+Route::get('/logs', function () {
+    return view('authethications.Login',[
+        'title' => 'Login'
+    ]);
+});
