@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-4">
     <h1>Login</h1><br>
-<form>
+<form class="p-4 p-md-5 border rounded-3 bg-light">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
