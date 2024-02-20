@@ -27,7 +27,7 @@ Route::get('/logs', function () {
 
 Route::get('/register', function () {
     return view('authethications.Register',[
-        'title' => 'Login'
+        'title' => 'Register'
     ]);
 });
 
