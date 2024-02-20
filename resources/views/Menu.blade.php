@@ -2,7 +2,7 @@
 
 @section('container')
 
-<h1 class="text-center">The Menu's</h1><br>
+<h1 class="text-center display-4">The Menu's</h1><br>
 
 <div class="row">
 @foreach( $MenuLists as $mes )

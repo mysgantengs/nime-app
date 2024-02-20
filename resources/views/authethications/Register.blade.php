@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-4">
     <h1>Register New Account's</h1><br>
-<form class="p-4 p-md-5 border rounded-3 bg-primary">
+<form class="p-4 p-md-5 border rounded-3 bg-light">
   <div class="mb-3">
     <label for="Name" class="form-label">Create New Name</label>
     <input type="Name" class="form-control" id="Name">
