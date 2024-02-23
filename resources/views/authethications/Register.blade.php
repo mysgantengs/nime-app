@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-4">
-    <h1>Register New Account's</h1><br>
+    <h1>Register <span class="text-primary">New</span> Account's</h1><br>
 <form class="p-4 p-md-5 border rounded-3 bg-light">
   <div class="mb-3">
     <label for="Name" class="form-label">Create New Name</label>
@@ -25,7 +25,8 @@
     <label for="PasswordII" class="form-label">Enter New Password</label>
     <input type="password" class="form-control" id="PasswordII">
   </div>
-  <button type="submit" class="btn btn-primary">Register</button>
+  <a href="" class="btn btn-primary">Register</a>
+  <!-- <button type="submit" class="btn btn-primary">Register</button> -->
 </form>
 </div>
 </div>

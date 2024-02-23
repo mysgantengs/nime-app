@@ -21,7 +21,10 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Log-In</button>
+  <a href="" class="btn btn-primary">Log-In</a><br><br>
+  <!-- <button type="submit" class="btn btn-primary">Log-In</button><br><br> -->
+  <a href="" class="text-decoration-none">Forgot Password</a>
+
 </form>
 </div>
 </div>
