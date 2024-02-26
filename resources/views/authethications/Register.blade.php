@@ -5,7 +5,7 @@
 
 
 
-<div class="card mb-3" style="max-width: 1000px;">
+<div class="card mb-3" style="max-width: 970px;">
   <div class="row g-0">
     <div class="col-md-4">
 
@@ -13,8 +13,8 @@
 <!-- <div class="row">
     <div class="col-md-4"> -->
    
-<form class="p-4 p-md-5 border rounded-3 bg-light">
-<h1>Register <span class="text-primary">New</span> Account's</h1><br>
+<form class="p-4 p-md-5 border rounded-3 bg-dark text-white">
+<h2><span class="text-primary">Registration New Account's </span></h2><br>
   <div class="mb-3">
     <label for="Name" class="form-label">Create New Name</label>
     <input type="Name" class="form-control" id="Name">
@@ -42,9 +42,9 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <!-- <h5 class="card-title">Let's Join To Have Free Fun</h5><br> -->
+        <p class="card-images"><img src="7457.jpg" class="card-img" alt="image regis" style="height: 540px;"></p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
       </div>
     </div>
   </div>

@@ -9,16 +9,16 @@
 
     <!-- <div class="row">
     <div class="col-md-4"> -->
-    <form class="p-4 p-md-5 border rounded-3 bg-light">
-    <h1><span class="text-primary">Login</span></h1><br>
+    <form class="p-4 p-md-5 border rounded-3 bg-dark text-white">
+    <h2><span class="text-primary">Login</span></h2><br>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="Username" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text"></div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="Password">
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -35,9 +35,9 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <p class="card-text"><img src="7475.jpg" class="card-img" alt="image login" style="height: 420px;"></p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
       </div>
     </div>
   </div>
