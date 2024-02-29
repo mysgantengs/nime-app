@@ -18,7 +18,7 @@
    <h2 class="text-danger display-6"><span class="text-light">Join</span> A Member</h2><br>
 
      <a href="/register" class="btn btn-danger">Register</a>
-     <a href="/logs" class="btn btn-danger">Log-In</a><br><br>  
+     <a href="/logs" class="btn btn-warning">Log-In</a><br><br>  
 
      </div>
     </div> 

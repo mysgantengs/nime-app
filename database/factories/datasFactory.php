@@ -19,7 +19,7 @@ class datasFactory extends Factory
         return [
             "images" => $this->faker->imageUrl(),
             "cardtitle" => $this->faker->sentence(),
-            "descriptions" =>  $this->faker->sentence()
+            "descriptions" =>  $this->faker->paragraph()
         ];
     }
 }
