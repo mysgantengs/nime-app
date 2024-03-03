@@ -3,7 +3,7 @@
 @section('container')
 
 
-<div class="card mb-3" style="max-width: 970px;">
+<div class="card mb-3 bg-warning bg-warning" style="max-width: 970px;">
   <div class="row g-0">
     <div class="col-md-4">
 
