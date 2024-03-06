@@ -23,7 +23,7 @@ class ViewController extends Controller
 
         return response()->view('Menu', [
             'title' => 'Menu',
-            "MenuLists" => datas::all()
+            "MenuLists" => datas::latest()->get()
         ]);
 
     }
@@ -45,7 +45,7 @@ class ViewController extends Controller
         return response()->view('Menus', [
 
             'title' => 'litle Menus',
-            'Menus' => datas::latest()->get()
+            'Menus' => datas::all()
  
 
         ]);
