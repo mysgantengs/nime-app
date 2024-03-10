@@ -5,9 +5,10 @@
 <h1 class="text-center display-4">The Menu's</h1><br>
 
 <div class="row">
+    
 @foreach( $MenuLists as $mes )
+<div class="col mb-4">
 
-   <div class="col">
     <div class="card" style="width: 18rem;">
     <img src="{{ $mes->images }}" class="card-img-top" alt="bem">
     <div class="card-body">
@@ -21,7 +22,7 @@
 </div>
 
   @endforeach
-</div>
+  </div>
 
   @endsection 
 
