@@ -16,21 +16,21 @@
       <form class="p-4 p-md-5 border rounded-3 bg-dark text-white">
         <h2><span class="text-primary">Registration New Account's </span></h2><br>
         <div class="mb-3">
-          <label for="Name" class="form-label">Create New Name</label>
-          <input type="Name" class="form-control" id="Name">
+          <label for="name" class="form-label"><span class="text-danger">Create New Name</span></label>
+          <input type="name" class="form-control" name="name" id="name" placeholder="New Name">
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="Username" class="form-label">Create Username</label>
-          <input type="Username" class="form-control" id="Username">
+          <label for="username" class="form-label"><span class="text-danger">Create Username</span></label>
+          <input type="username" class="form-control" name="username" id="username">
         </div>
         <div class="mb-3">
-          <label for="PasswordI" class="form-label">Create New Password</label>
-          <input type="password" class="form-control" id="PasswordI">
+          <label for="email" class="form-label"><span class="text-danger">Enter Email</span></label>
+          <input type="text" class="form-control" name="email" id="email">
         </div>
         <div class="mb-3">
-          <label for="PasswordII" class="form-label">Enter New Password</label>
-          <input type="password" class="form-control" id="PasswordII">
+          <label for="password" class="form-label"><span class="text-danger">Enter New Password</span><label>
+              <input type="password" class="form-control" name="password" id="password">
         </div>
         <a href="" class="btn btn-primary">Register</a>
         <!-- <button type="submit" class="btn btn-primary">Register</button> -->

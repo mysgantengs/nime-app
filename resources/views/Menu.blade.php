@@ -9,7 +9,7 @@
 
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Search" name="search">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+    <button class="btn btn-warning" type="submit">Search</button>
   </div>
 
   @foreach( $MenuLists as $mes )
@@ -28,6 +28,11 @@
   </div>
 
   @endforeach
+
+</div>
+<div class="d-flex justify-content-center">
+  {{ $MenuLists->links() }}
+
 </div>
 
 @endsection

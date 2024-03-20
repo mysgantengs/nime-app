@@ -18,15 +18,16 @@ class ViewController extends Controller
         ]);
     }
 
-    public function Menu(): Response
+    public function Menu()
     {
 
-        @dd("search");
 
         return response()->view('Menu', [
             'title' => 'Menu',
-            "MenuLists" => datas::latest()->get()
+            "MenuLists" => datas::latest()->paginate(6)
         ]);
+
+        // @dd(request("search"));
     }
 
     public function About(): Response
