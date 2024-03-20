@@ -18,7 +18,6 @@
         <div class="mb-3">
           <label for="name" class="form-label"><span class="text-danger">Create New Name</span></label>
           <input type="name" class="form-control" name="name" id="name" placeholder="New Name">
-          <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
           <label for="username" class="form-label"><span class="text-danger">Create Username</span></label>

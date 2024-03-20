@@ -14,4 +14,10 @@ class RegisterControlller extends Controller
             'title' => 'Register'
         ]);
     }
+
+    public function Register()
+    {
+
+        return request()->all();
+    }
 }
