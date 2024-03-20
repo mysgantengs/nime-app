@@ -15,7 +15,7 @@ class RegisterControlller extends Controller
         ]);
     }
 
-    public function Register()
+    public function Registers()
     {
 
         return request()->all();

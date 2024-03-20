@@ -22,4 +22,5 @@ Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
 Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 //Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 Route::get('/register', [\App\Http\Controllers\RegisterControlller::class, 'ViewRegister']);
+Route::post('/register', [\App\Http\Controllers\RegisterControlller::class, 'Registers']);
 Route::get('/login', [\App\Http\Controllers\LoginControlller::class, 'ViewLogin']);
