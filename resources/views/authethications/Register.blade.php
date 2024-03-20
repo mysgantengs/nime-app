@@ -22,15 +22,15 @@
         </div>
         <div class="mb-3">
           <label for="username" class="form-label"><span class="text-danger">Create Username</span></label>
-          <input type="username" class="form-control" name="username" id="username">
+          <input type="username" class="form-control" name="username" id="username" placeholder="Create Username">
         </div>
         <div class="mb-3">
           <label for="email" class="form-label"><span class="text-danger">Enter Email</span></label>
-          <input type="text" class="form-control" name="email" id="email">
+          <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email">
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label"><span class="text-danger">Enter New Password</span><label>
-              <input type="password" class="form-control" name="password" id="password">
+          <label for="password" class="form-label"><span class="text-danger">Enter Password</span><label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
         </div>
         <a href="" class="btn btn-primary">Register</a>
         <!-- <button type="submit" class="btn btn-primary">Register</button> -->

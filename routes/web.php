@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterControlller;
 use App\Models\datas;
 use Illuminate\Support\Facades\Route;
 
@@ -20,15 +21,5 @@ Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu']);
 Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
 Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 //Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
-Route::get('/logs', function () {
-    return view('authethications.Login',[
-        'title' => 'Login'
-    ]);
-});
-
-Route::get('/register', function () {
-    return view('authethications.Register',[
-        'title' => 'Register'
-    ]);
-});
-
+Route::get('/register', [\App\Http\Controllers\RegisterControlller::class, 'ViewRegister']);
+Route::get('/login', [\App\Http\Controllers\LoginControlller::class, 'ViewLogin']);
