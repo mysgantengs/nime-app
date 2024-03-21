@@ -9,19 +9,21 @@
 
       <!-- <div class="row">
     <div class="col-md-4"> -->
-      <form class="p-4 p-md-5 border rounded-3 bg-dark text-white" style="height: 475px">
+      <form class="p-4 p-md-5 border rounded-3 bg-dark text-white" style="height: 475px" action="/login" method="post">
         <h2><span class="text-primary">Login</span></h2><br>
         <div class="mb-3">
-          <label for="username" class="form-label"><span class="text-danger">Username</span></label>
-          <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+          <label for="name" class="form-label"><span class="text-danger">Name Account</span></label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Username">
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label"><span class="text-danger">Password</span></label>
           <input type="password" class="form-control" id="password" name="password" placeholder="Password">
         </div>
-        <a href="" class="btn btn-primary">Log-In</a><br><br>
-        <!-- <button type="submit" class="btn btn-primary">Log-In</button><br><br> -->
+        <!-- <a href="" class="btn btn-primary">Log-In</a><br><br> -->
+        <button type="submit" class="btn btn-primary">Log-In</button><br><br>
+        @csrf
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <a href="" class="text-decoration-none">Forgot Password? update to password</a>
 
       </form>

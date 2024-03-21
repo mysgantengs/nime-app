@@ -15,4 +15,17 @@ class LoginControlller extends Controller
             'title' => 'Login'
         ]);
     }
+
+    public function Logins()
+    {
+
+        request()->validate([
+
+            'name' => 'required|max:200',
+            'password' => 'required|min:5|max:200'
+
+        ]);
+
+        dd('login found!');
+    }
 }

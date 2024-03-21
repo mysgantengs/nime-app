@@ -20,15 +20,14 @@ class RegisterControlller extends Controller
     public function Registers()
     {
 
-        return request()->validate([
+        request()->validate([
 
             'name' => 'required|max:200',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:5|max:200'
 
-
         ]);
 
-        @dd('register succesfully');
+        dd('register succesfully');
     }
 }
