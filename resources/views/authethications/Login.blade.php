@@ -5,7 +5,7 @@
 
 <div class="card mb-3 bg-warning bg-warning" style="max-width: 970px;">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-lg-4">
 
       <!-- <div class="row">
     <div class="col-md-4"> -->

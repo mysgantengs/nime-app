@@ -25,7 +25,7 @@
         </div> -->
         <div class="mb-3">
           <label for="email" class="form-label"><span class="text-danger">Enter Email</span></label>
-          <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label"><span class="text-danger">Enter Password</span><label>
