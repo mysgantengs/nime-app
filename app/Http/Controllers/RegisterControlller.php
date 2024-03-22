@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use App\Models\User;
 
 use function Laravel\Prompts\password;
 
@@ -20,7 +21,7 @@ class RegisterControlller extends Controller
     public function Registers()
     {
 
-        request()->validate([
+        $ValidateRegister = request()->validate([
 
             'name' => 'required|max:200',
             'email' => 'required|email:dns|unique:users',
@@ -28,6 +29,10 @@ class RegisterControlller extends Controller
 
         ]);
 
-        dd('register succesfully');
+        $res = User::create($ValidateRegister);
+
+        if ($res == true) {
+            return redirect('/login');
+        }
     }
 }

@@ -9,12 +9,12 @@
 <div class="row">
 
 
-  <div class="input-group mb-3">
-    <form action="/Menu" method="post">
+  <form action="/Menu" method="get">
+    <div class="input-group mb-3">
       <input type="text" class="form-control" placeholder="Search" name="search">
-      <button class="btn btn-warning" type="submit">Search</button>
-    </form>
-  </div>
+      <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+  </form>
 
   @foreach( $MenuLists as $mes )
   <div class="col mb-4 mt-5">
