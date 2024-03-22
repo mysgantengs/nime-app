@@ -27,7 +27,7 @@ class ViewController extends Controller
             "MenuLists" => datas::latest()->paginate(6)
         ]);
 
-        // @dd(request("search"));
+        dd(request("search"));
     }
 
     public function About(): Response

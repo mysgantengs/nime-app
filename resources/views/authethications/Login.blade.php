@@ -13,12 +13,21 @@
         <h2><span class="text-primary">Login</span></h2><br>
         <div class="mb-3">
           <label for="name" class="form-label"><span class="text-danger">Name Account</span></label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Username">
-          <div id="emailHelp" class="form-text"></div>
+          <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Name Account" required>
+          @error('name')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+          @enderror
         </div>
         <div class="mb-3">
           <label for="password" class="form-label"><span class="text-danger">Password</span></label>
-          <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="Password" required>
+          @error('password')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+          @enderror
         </div>
         <!-- <a href="" class="btn btn-primary">Log-In</a><br><br> -->
         <button type="submit" class="btn btn-primary">Log-In</button><br><br>

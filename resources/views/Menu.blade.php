@@ -10,8 +10,10 @@
 
 
   <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Search" name="search">
-    <button class="btn btn-warning" type="submit">Search</button>
+    <form action="/Menu" method="post">
+      <input type="text" class="form-control" placeholder="Search" name="search">
+      <button class="btn btn-warning" type="submit">Search</button>
+    </form>
   </div>
 
   @foreach( $MenuLists as $mes )
