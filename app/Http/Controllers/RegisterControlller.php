@@ -34,12 +34,5 @@ class RegisterControlller extends Controller
         if ($res == true) {
             return redirect('/login')->with('success', 'Register Successfully. Login Now!');
         }
-        // else {
-        //     return response()->view('authethications.Register', [
-
-        //         'error' => 'Register Failed'
-
-        //     ]);
-        // }
     }
 }

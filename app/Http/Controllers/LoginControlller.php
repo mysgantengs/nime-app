@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
 
 class LoginControlller extends Controller
 {
@@ -16,16 +18,21 @@ class LoginControlller extends Controller
         ]);
     }
 
-    public function Logins()
+    public function Logins(): RedirectResponse
     {
 
-        request()->validate([
+        $validateLogin = request()->validate([
 
-            'name' => 'required|max:200',
-            'password' => 'required|min:5|max:200'
+            'name' => ['required', 'name'],
+            'password' => ['required']
 
         ]);
 
-        dd('login found!');
+        $userLogin = Auth::attempt($validateLogin);
+        if ($userLogin == true) {
+            request()->session()->regenerate();
+            return redirect('/Menu');
+        } else {
+        }
     }
 }
