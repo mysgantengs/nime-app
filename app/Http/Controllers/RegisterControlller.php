@@ -32,7 +32,14 @@ class RegisterControlller extends Controller
         $res = User::create($ValidateRegister);
 
         if ($res == true) {
-            return redirect('/login');
+            return redirect('/login')->with('success', 'Register Successfully. Login Now!');
         }
+        // else {
+        //     return response()->view('authethications.Register', [
+
+        //         'error' => 'Register Failed'
+
+        //     ]);
+        // }
     }
 }

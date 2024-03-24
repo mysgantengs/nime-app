@@ -2,6 +2,12 @@
 
 @section('container')
 
+@if(session()->has('success'))
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{ session('success') }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
 
 <div class="card mb-3 bg-warning bg-warning" style="max-width: 970px;">
   <div class="row g-0">
