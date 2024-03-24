@@ -18,10 +18,10 @@ class RegisterControlller extends Controller
         ]);
     }
 
-    public function Registers()
+    public function Registers(Request $request)
     {
 
-        $ValidateRegister = request()->validate([
+        $ValidateRegister = $request->validate([
 
             'name' => 'required|max:200',
             'email' => 'required|email:dns|unique:users',

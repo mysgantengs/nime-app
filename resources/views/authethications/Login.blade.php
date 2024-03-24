@@ -29,11 +29,11 @@
         <div class="mb-3">
           <label for="password" class="form-label"><span class="text-danger">Password</span></label>
           <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="Password" required>
-          @error('password')
+          <!-- @error('password')
           <div class="invalid-feedback">
             {{ $message }}
           </div>
-          @enderror
+          @enderror -->
         </div>
         <!-- <a href="" class="btn btn-primary">Log-In</a><br><br> -->
         <button type="submit" class="btn btn-primary">Log-In</button><br><br>

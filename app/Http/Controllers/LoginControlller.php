@@ -18,21 +18,22 @@ class LoginControlller extends Controller
         ]);
     }
 
-    public function Logins(): RedirectResponse
+    public function Logins(Request $request): RedirectResponse
     {
 
-        $validateLogin = request()->validate([
+        $validateLogin = $request->validate([
 
-            'name' => ['required', 'name'],
+            'name' => ['required'],
             'password' => ['required']
 
         ]);
+
+
 
         $userLogin = Auth::attempt($validateLogin);
         if ($userLogin == true) {
             request()->session()->regenerate();
             return redirect('/Menu');
-        } else {
         }
     }
 }
