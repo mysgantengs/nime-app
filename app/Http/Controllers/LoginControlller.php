@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
+// use Illuminate\Http\RedirectResponse;
 
 class LoginControlller extends Controller
 {
@@ -18,7 +18,7 @@ class LoginControlller extends Controller
         ]);
     }
 
-    public function Logins(Request $request): RedirectResponse
+    public function Logins(Request $request)
     {
 
         $validateLogin = $request->validate([
@@ -34,6 +34,8 @@ class LoginControlller extends Controller
         if ($userLogin == true) {
             request()->session()->regenerate();
             return redirect('/Menu');
+        } else {
+            return back()->with('Error', 'Login Failed!');
         }
     }
 }
