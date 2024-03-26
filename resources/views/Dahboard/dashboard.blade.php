@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 
 <head>
@@ -9,12 +9,12 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Dashboard Template · Bootstrap v5.0</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/"> -->
 
 
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -30,11 +30,11 @@
                 font-size: 3.5rem;
             }
         }
-    </style>
+    </style> -->
 
 
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<!-- <link href="dashboard.css" rel="stylesheet">
 </head>
 
 <body>
@@ -287,4 +287,4 @@
     <script src="dashboard.js"></script>
 </body>
 
-</html>
+</html> -->

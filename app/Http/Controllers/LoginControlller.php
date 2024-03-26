@@ -33,7 +33,7 @@ class LoginControlller extends Controller
         $userLogin = Auth::attempt($validateLogin);
         if ($userLogin == true) {
             request()->session()->regenerate();
-            return redirect('/dashboard');
+            return redirect('/dashbord');
         } else {
             return back()->with('Error', 'Login Failed!');
         }

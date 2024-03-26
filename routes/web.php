@@ -25,4 +25,4 @@ Route::get('/register', [\App\Http\Controllers\RegisterControlller::class, 'View
 Route::post('/register', [\App\Http\Controllers\RegisterControlller::class, 'Registers']);
 Route::get('/login', [\App\Http\Controllers\LoginControlller::class, 'ViewLogin']);
 Route::post('/login', [\App\Http\Controllers\LoginControlller::class, 'Logins']);
-Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'viewDashboard']);
+Route::get('/dashbord', [\App\Http\Controllers\DashboardController::class, 'viewDashboard']);
