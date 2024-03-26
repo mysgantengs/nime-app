@@ -16,9 +16,9 @@ class OutMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->session()->exists("name")) {
-            return $next($request);
-        } else {
             return redirect('/login');
+        } else {
+            return $next($request);
         }
     }
 }
