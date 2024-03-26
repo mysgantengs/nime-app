@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\RegisterControlller;
+use App\Http\Middleware\MemberMiddleware;
 use App\Models\datas;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +25,9 @@ Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']
 //Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 Route::get('/register', [\App\Http\Controllers\RegisterControlller::class, 'ViewRegister']);
 Route::post('/register', [\App\Http\Controllers\RegisterControlller::class, 'Registers']);
-Route::get('/login', [\App\Http\Controllers\LoginControlller::class, 'ViewLogin']);
-Route::post('/login', [\App\Http\Controllers\LoginControlller::class, 'Logins']);
 Route::get('/dashbord', [\App\Http\Controllers\DashboardController::class, 'viewDashboard']);
+Route::controller(\App\Http\Controllers\LoginControlller::class)->group(function () {
+    Route::get('/login', 'ViewLogin')->middleware([\App\Http\Middleware\MemberMiddleware::class]);
+    Route::post('/login', 'Logins')->middleware([\App\Http\Middleware\MemberMiddleware::class]);
+    Route::post('/logout', 'Logout')->middleware([\App\Http\Middleware\OutMiddleware::class]);
+});

@@ -38,4 +38,9 @@ class LoginControlller extends Controller
             return back()->with('Error', 'Login Failed!');
         }
     }
+
+    public function Logout(Request $request)
+    {
+        $request->session()->forget('name');
+    }
 }
