@@ -41,6 +41,9 @@ class LoginControlller extends Controller
 
     public function Logout(Request $request)
     {
-        $request->session()->forget('name');
+        $re = $request->session()->forget('name');
+        if ($re == false) {
+            return redirect('/Homes');
+        }
     }
 }
