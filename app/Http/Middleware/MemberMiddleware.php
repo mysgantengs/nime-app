@@ -16,9 +16,9 @@ class MemberMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->session()->exists('name')) {
-            return $next($request);
-        } else {
             return redirect('/dashbord');
+        } else {
+            return $next($request);
         }
     }
 }

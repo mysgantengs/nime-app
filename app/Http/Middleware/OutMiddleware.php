@@ -16,9 +16,9 @@ class OutMiddleware
     public function handle(Request $request, Closure $next): Response
     {
         if ($request->session()->exists("name")) {
-            return redirect('/dashbord');
-        } else {
             return $next($request);
+        } else {
+            return redirect('/dashbord');
         }
     }
 }
