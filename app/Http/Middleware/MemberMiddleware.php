@@ -18,7 +18,7 @@ class MemberMiddleware
         if ($request->session()->exists('name')) {
             return $next($request);
         } else {
-            return redirect('/login');
+            return redirect('/dashbord');
         }
     }
 }

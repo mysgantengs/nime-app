@@ -27,7 +27,7 @@
         <h2><span class="text-primary">Login</span></h2><br>
         <div class="mb-3">
           <label for="name" class="form-label"><span class="text-danger">Name Account</span></label>
-          <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Name Account" value="{{ old('name') }}">
+          <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Name Account" value="{{ old('named') }}">
           @error('name')
           <div class="invalid-feedback">
             {{ $message }}
