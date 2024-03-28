@@ -10,6 +10,27 @@
         <!-- <a class="nav-link {{$title == 'Menu' ? 'active' : '' }} text-white" href="/Menu">Menu</a> -->
         <a class="nav-link {{$title == 'About' ? 'active' : '' }} text-white" href="/About">About</a>
       </div>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+      <li class="navbar-nav ms-auto">
+        @auth
+        <div class="dropdown">
+          <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ auth()->user()->name }}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">My Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </div>
+
+        @else
+        <div class="nav-item">
+          <a class="nav-link {{$title == 'Home' ? 'active' : '' }} text-white" aria-current="page" href="">Log-in</a>
+      </li>
+      @endauth
     </div>
+  </div>
   </div>
 </nav>

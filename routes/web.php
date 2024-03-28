@@ -29,7 +29,7 @@ Route::controller(\App\Http\Controllers\RegisterControlller::class)->group(funct
     Route::post('/register', 'Registers');
 });
 Route::controller(\App\Http\Controllers\LoginControlller::class)->group(function () {
-    Route::get('/login', 'ViewLogin')->middleware([\App\Http\Middleware\MemberMiddleware::class]);
-    Route::post('/login', 'Logins')->middleware([\App\Http\Middleware\MemberMiddleware::class]);
+    Route::get('/login', 'ViewLogin')->middleware('guest');
+    Route::post('/login', 'Logins');
     Route::get('/logout', 'Logout')->middleware([\App\Http\Middleware\OutMiddleware::class]);
 });
