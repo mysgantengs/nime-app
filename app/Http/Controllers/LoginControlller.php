@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -39,10 +40,15 @@ class LoginControlller extends Controller
         }
     }
 
-    public function Logout(Request $request)
+    public function Logout(Request $request): RedirectResponse
     {
-        $re = $request->session()->forget('name');
-        if ($re == false) {
+
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        if ($request == false) {
             return redirect('/Homes');
         }
     }

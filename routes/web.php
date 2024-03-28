@@ -31,5 +31,5 @@ Route::controller(\App\Http\Controllers\RegisterControlller::class)->group(funct
 Route::controller(\App\Http\Controllers\LoginControlller::class)->group(function () {
     Route::get('/login', 'ViewLogin')->middleware('guest');
     Route::post('/login', 'Logins');
-    Route::get('/logout', 'Logout')->middleware([\App\Http\Middleware\OutMiddleware::class]);
+    Route::post('/logout', 'Logout')->middleware([\App\Http\Middleware\OutMiddleware::class]);
 });

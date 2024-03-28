@@ -20,7 +20,14 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">My Dashboard</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li>
+              <form action="/logout" method="post">
+                @csrf
+                <button type="submit" class="dropdown-item">Logout</button>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              </form>
+              <!-- <a href="/logout" class="dropdown-item">Logout</a> -->
+            </li>
             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </div>
