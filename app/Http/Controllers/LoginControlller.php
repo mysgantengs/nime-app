@@ -48,8 +48,7 @@ class LoginControlller extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        if ($request == false) {
-            return redirect('/Homes');
-        }
+        // if ($request == false) {
+        return redirect('/Homes');
     }
 }

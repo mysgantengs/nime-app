@@ -19,11 +19,11 @@
             Welcome, {{ auth()->user()->name }}
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">My Dashboard</a></li>
+            <li><a class="dropdown-item" href="/dashbord"><i class="bi bi-layout-text-window-reverse"></i> My Dashboard</a></li>
             <li>
               <form action="/logout" method="post">
                 @csrf
-                <button type="submit" class="dropdown-item">Logout</button>
+                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
               </form>
               <!-- <a href="/logout" class="dropdown-item">Logout</a> -->
