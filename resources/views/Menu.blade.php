@@ -2,7 +2,7 @@
 
 @section('container')
 
-<h5 class="">Welcome </h5>
+
 
 <h1 class="text-center display-4">The Menu's</h1><br>
 

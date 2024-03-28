@@ -16,7 +16,7 @@
         @auth
         <div class="dropdown">
           <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            {{ auth()->user()->name }}
+            Welcome, {{ auth()->user()->name }}
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">My Dashboard</a></li>
@@ -25,11 +25,16 @@
           </ul>
         </div>
 
+
         @else
+
         <div class="nav-item">
           <a class="nav-link {{$title == 'Home' ? 'active' : '' }} text-white" aria-current="page" href="">Log-in</a>
+        </div>
       </li>
+
       @endauth
+
     </div>
   </div>
   </div>
