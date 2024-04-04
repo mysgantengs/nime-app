@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/Homes', [\App\Http\Controllers\ViewController::class, 'Home']);
 Route::get('/Menu', [\App\Http\Controllers\ViewController::class, 'Menu'])->middleware('auth');
 Route::get('/About', [\App\Http\Controllers\ViewController::class, 'About']);
-Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
+Route::get('/Menus/{men:cardtitle}', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 Route::get('/dashbord', [\App\Http\Controllers\DashboardController::class, 'viewDashboard'])->middleware('auth');
 //Route::get('/Menus', [\App\Http\Controllers\ViewController::class, 'ViewRender']);
 Route::controller(\App\Http\Controllers\RegisterControlller::class)->group(function () {

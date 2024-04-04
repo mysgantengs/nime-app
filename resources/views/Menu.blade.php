@@ -24,7 +24,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ $mes->cardtitle }}</h5>
         <p class="card-text">{{ $mes->descriptions }}</p>
-        <a href="/Menus/{{ $mes->id }}" class="btn btn-primary">Views</a>
+        <a href="/Menus/{{ $mes->cardtitle }}" class="btn btn-primary">Views</a>
 
       </div>
 
@@ -34,9 +34,6 @@
   @endforeach
 
 </div>
-<div class="d-flex justify-content-center">
-  {{ $MenuLists->links() }}
 
-</div>
 
 @endsection

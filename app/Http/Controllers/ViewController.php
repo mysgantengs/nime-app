@@ -21,13 +21,15 @@ class ViewController extends Controller
     public function Menu()
     {
 
+        $data_menu = datas::latest();
+        if (request('search')) {
+            $data_menu->with('cardtitle', 'like', '%' . request('search') . '%');
+        }
 
         return response()->view('Menu', [
             'title' => 'Menu',
-            "MenuLists" => datas::latest()->paginate(6)
+            "MenuLists" => $data_menu->get()
         ]);
-
-        dd(request("search"));
     }
 
     public function About(): Response
