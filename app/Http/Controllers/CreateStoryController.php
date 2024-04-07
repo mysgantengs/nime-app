@@ -12,7 +12,9 @@ class CreateStoryController extends Controller
      */
     public function index()
     {
-        return "testII";
+        return response()->view('Dashboard.Story.CreateStory', [
+            "title" => "Create My Story's "
+        ]);
     }
 
     /**
