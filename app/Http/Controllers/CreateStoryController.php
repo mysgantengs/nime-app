@@ -5,16 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\datas;
 use Illuminate\Http\Request;
 
-class MemberDataController extends Controller
+class CreateStoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return response()->view('Dashboard.DataMember.MemberData', [
-            "title" => "Member Data"
-        ]);
+        return "testII";
     }
 
     /**

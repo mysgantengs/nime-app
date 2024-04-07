@@ -35,4 +35,5 @@ Route::controller(\App\Http\Controllers\LoginControlller::class)->group(function
     Route::post('/logout', 'Logout')->middleware('auth');
 });
 
-Route::resource('/dashboard/memberdata', \App\Http\Controllers\MemberDataController::class);
+Route::resource('/dashboard/memberdata', \App\Http\Controllers\MemberDataController::class)->middleware('auth');
+Route::resource('/dashboard/createstory', \App\Http\Controllers\CreateStoryController::class)->middleware('auth');

@@ -8,9 +8,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/dashboard/createstory">
                     <span data-feather="file"></span>
-                    Orders
+                    Create Story
                 </a>
             </li>
             <li class="nav-item">
