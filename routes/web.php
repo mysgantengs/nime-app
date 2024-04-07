@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MemberDataController;
 use App\Http\Controllers\RegisterControlller;
 use App\Http\Middleware\MemberMiddleware;
 use App\Models\datas;
@@ -33,3 +34,5 @@ Route::controller(\App\Http\Controllers\LoginControlller::class)->group(function
     Route::post('/login', 'Logins');
     Route::post('/logout', 'Logout')->middleware('auth');
 });
+
+Route::resource('/dashboard/memberdata', \App\Http\Controllers\MemberDataController::class);

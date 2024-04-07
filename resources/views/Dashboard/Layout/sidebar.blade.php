@@ -14,8 +14,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span data-feather="card-text"></span>
+                <a class="nav-link" href="/dashboard/memberdata">
+                    <span data-feather="file-text"></span>
                     Member Data
                 </a>
             </li>
