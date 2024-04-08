@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\datas;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class MemberDataController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        return response()->view('Dashboard.DataMember.MemberData', [
+            "title" => "Member Data",
+            "DataMember" => User::all()
+        ]);
     }
 
     /**
@@ -33,7 +37,7 @@ class MemberDataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(datas $datas)
+    public function show(User $user)
     {
         //
     }
@@ -41,7 +45,7 @@ class MemberDataController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(datas $datas)
+    public function edit(User $user)
     {
         //
     }
@@ -49,7 +53,7 @@ class MemberDataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, datas $datas)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -57,7 +61,7 @@ class MemberDataController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(datas $datas)
+    public function destroy(User $user)
     {
         //
     }

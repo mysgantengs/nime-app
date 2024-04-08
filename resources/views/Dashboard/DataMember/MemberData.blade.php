@@ -20,21 +20,23 @@
     <table class="table table-striped table-sm">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
+                <!-- <th scope="col">#</th> -->
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <!-- <th scope="col">Header</th> -->
             </tr>
         </thead>
         <tbody>
+            @foreach($DataMember as $Member)
             <tr>
-                <td>1,001</td>
-                <td>random</td>
-                <td>data</td>
-                <td>placeholder</td>
-                <td>text</td>
+                <td>{{ $Member->id }}</td>
+                <td>{{ $Member->name }}</td>
+                <td>{{ $Member->email }}</td>
+                <!-- <td>placeholder</td> -->
+                <!-- <td>text</td> -->
             </tr>
+            @endforeach
 
         </tbody>
     </table>
