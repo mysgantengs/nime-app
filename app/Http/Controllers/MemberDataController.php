@@ -13,7 +13,8 @@ class MemberDataController extends Controller
     public function index()
     {
         return response()->view('Dashboard.DataMember.MemberData', [
-            "title" => "Member Data"
+            "title" => "Member Data",
+            "DataMember" => datas::all()
         ]);
     }
 
