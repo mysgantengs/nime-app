@@ -19,7 +19,6 @@ class MemberDataController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
