@@ -15,35 +15,38 @@
         </button>
     </div>
 </div>
+<div class="col-lg-8">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <!-- <th scope="col">#</th> -->
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <!-- <th scope="col">Header</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($DataMember as $Member)
+                <tr>
+                    <td>{{ $Member->id }}</td>
+                    <td>{{ $Member->name }}</td>
+                    <td>{{ $Member->email }}</td>
+                    <!-- <td>placeholder</td> -->
+                    <!-- <td>text</td> -->
+                </tr>
+                @endforeach
 
-<div class="table-responsive">
-    <table class="table table-striped table-sm">
-        <thead>
-            <tr>
-                <!-- <th scope="col">#</th> -->
-                <th scope="col">No</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <!-- <th scope="col">Header</th> -->
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($DataMember as $Member)
-            <tr>
-                <td>{{ $Member->id }}</td>
-                <td>{{ $Member->name }}</td>
-                <td>{{ $Member->email }}</td>
-                <!-- <td>placeholder</td> -->
-                <!-- <td>text</td> -->
-            </tr>
-            @endforeach
+            </tbody>
+        </table>
+    </div>
 
-        </tbody>
-    </table>
+</div>
 </div>
 
 </div>
-</div>
+
 
 
 

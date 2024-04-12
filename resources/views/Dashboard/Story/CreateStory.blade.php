@@ -15,26 +15,28 @@
         </button>
     </div>
 </div>
+<div class="col-lg-6">
 
-<form action="" method="post">
-    <h5>Enter New Cartitle</h5>
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" name="cardtitle" placeholder="cardttle">
-        <label for="floatingInput">Cardtitle</label>
-    </div>
-    <h5 class="mt-3">Enter New Description</h5>
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a description here" name="descriptions" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Description</label>
-    </div>
-    <h5 class="mt-3">Enter Images</h5>
-    <div class="mb-5">
-        <!-- <label for="formFileSm" class="form-label">Small file input example</label> -->
-        <input class="form-control form-control-sm" name="images" type="file">
-    </div>
-    <div>
+    <form action="/Menu" method="post">
+        <h5>Enter New Cartitle</h5>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" name="cardtitle" placeholder="cardttle">
+            <label for="floatingInput">Cardtitle</label>
+        </div>
+        <h5 class="mt-3">Enter New Description</h5>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a description here" name="descriptions" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Description</label>
+        </div>
+        <h5 class="mt-3">Enter Images</h5>
+        <div class="mb-5">
+            <!-- <label for="formFileSm" class="form-label">Small file input example</label> -->
+            <input class="form-control form-control-sm" name="images" type="file">
+        </div>
+        <div>
 
-</form>
+    </form>
+</div>
 
 
 @endsection
