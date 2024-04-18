@@ -30,7 +30,6 @@ class CreateStoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**

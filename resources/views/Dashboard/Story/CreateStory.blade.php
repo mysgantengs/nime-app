@@ -1,6 +1,12 @@
 @extends('Dashboard.Layout.main')
 
 @section('container')
+<div class="container mb-5">
+    <div class="col-md-5">
+        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+    </div>
+</div>
+<!-- 
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-5 border-bottom">
     <h4 class="h5">Create My Story</h4>
@@ -24,19 +30,23 @@
             <label for="floatingInput">Cardtitle</label>
         </div>
         <h5 class="mt-3">Enter New Description</h5>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a description here" name="descriptions" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Description</label>
+        <div class="mb-3">
+            <label for="description" class="form-label">Example textarea</label>
+            <textarea class="form-control" name="description" placeholder="description" rows="3"></textarea>
         </div>
-        <h5 class="mt-3">Enter Images</h5>
-        <div class="mb-5">
-            <!-- <label for="formFileSm" class="form-label">Small file input example</label> -->
-            <input class="form-control form-control-sm" name="images" type="file">
-        </div>
-        <div>
+        <!-- <div class="form-floating">
+            <input id="x" value="Editor content goes here" type="hidden" name="content">
+            <trix-editor input="x"></trix-editor>
+        </div> -->
+<h5 class="mt-3">Enter Images</h5>
+<div class="mb-5">
+    <!-- <label for="formFileSm" class="form-label">Small file input example</label> -->
+    <input class="form-control form-control-sm" name="images" type="file">
+</div>
+<div>
 
     </form>
-</div>
+</div> -->
 
 
 @endsection
