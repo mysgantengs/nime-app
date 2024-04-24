@@ -22,6 +22,9 @@ class CreateStoryController extends Controller
      */
     public function create()
     {
+        return response()->view('Dashboard.Story.AddStory', [
+            "title" => "Create My Story's "
+        ]);
     }
 
 
@@ -30,6 +33,16 @@ class CreateStoryController extends Controller
      */
     public function store(Request $request)
     {
+        $validate = $request->validate([
+            "cardtitle" => "required|max:255",
+            "description" => "required",
+            "images" => "required|max:255",
+        ]);
+
+        $res = datas::create($validate);
+        if ($res == true) {
+            return redirect('/dashboard/createstory')->with('success', 'Create Succesfully!');
+        }
     }
 
     /**

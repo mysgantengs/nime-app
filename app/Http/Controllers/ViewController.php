@@ -21,6 +21,7 @@ class ViewController extends Controller
     public function Menu()
     {
 
+
         $data_menu = datas::latest();
         if (request('search')) {
             $data_menu->with('cardtitle', 'like', '%' . request('search') . '%');

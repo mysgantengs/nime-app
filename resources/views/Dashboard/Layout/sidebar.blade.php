@@ -17,6 +17,7 @@
                 <a class="nav-link {{ Request::is('dashboard/memberdata') ? 'active' : '' }}" href="/dashboard/memberdata">
                     <span data-feather="file-text"></span>
                     Member Data
+                    </form>
                 </a>
             </li>
 
