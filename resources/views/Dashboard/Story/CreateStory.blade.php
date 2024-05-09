@@ -15,13 +15,22 @@
         </button>
     </div>
 </div>
-<div class="col-lg-6">
+<div class="col-lg-8 mx-auto">
 
-    <form action="/dashboard/createstory/create" method="get">
-        <button type="submit" class="btn btn-primary mb-3">New Story</button>
+    <div class="card mb-3 text-center">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <form action="/dashboard/createstory/create" method="get">
+                <button type="submit" class="btn btn-primary mb-3">New Story</button>
 
-    </form>
-</div>
+            </form>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
 
 
-@endsection
+    </div>
+
+
+    @endsection

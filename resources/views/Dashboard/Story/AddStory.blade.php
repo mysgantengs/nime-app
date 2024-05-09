@@ -14,10 +14,18 @@
         </button>
     </div>
 </div>
+
+@if(session()->has('success'))
+<div class="alert alert-warning alert-dismissible fade show" style="max-width:970px;" role="alert">
+    {{ session('success') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
+
 <form action="/dashboard/createstory/store" method="post">
     <h5>Enter New Cartitle</h5>
     <div class="form-floating mb-3">
-        <input type="email" class="form-control" name="cardtitle" placeholder="cardttle">
+        <input type="text" class="form-control" name="cardtitle" placeholder="cardttle">
         <label for="floatingInput">Cardtitle</label>
     </div>
     <h5 class="mt-3">Enter New Description</h5>
@@ -28,10 +36,10 @@
         <input id="x" value="Editor content goes here" type="hidden" name="content">
         <trix-editor input="x"></trix-editor>
     </div>
-    <h5 class="mt-3">Enter Images</h5>
+    <!-- <h5 class="mt-3">Enter Images</h5>
     <div class="mb-5">
         <input class="form-control form-control-sm" name="images" type="file">
-    </div>
+    </div> -->
     <button type="submit" class="btn btn-primary mb-3">Add Story</button>
 
     <div>

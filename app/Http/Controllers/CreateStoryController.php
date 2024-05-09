@@ -41,7 +41,7 @@ class CreateStoryController extends Controller
 
         $res = datas::create($validate);
         if ($res == true) {
-            return redirect('/dashboard/createstory')->with('success', 'Create Succesfully!');
+            return redirect('/dashboard/createstory/create')->with('success', 'Create Succesfully!');
         }
     }
 
